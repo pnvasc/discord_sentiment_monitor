@@ -1,0 +1,26 @@
+.container {
+    width: 100%;
+    max-width: none;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.six.columns {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+@media (max-width: 550px) {
+    .six.columns {
+        width: 100%;
+        float: none;
+    }
+}
